@@ -1,0 +1,16 @@
+topic: ~Bedroom()
+language: enu
+
+u:(e:onStart)
+^nextProposal
+
+proposal: Now we are in the bedroom. $openhab=lightb 
+The bedroom looks very comfortable, isn't it? You can totally relax youself on this soft bed. Ah, the light outside is so bright, I will turn down the blind and dim the light for you to ensure you can have a good sleep.^break
+$openhab=blind 
+^break
+$openhab=lightd
+\pau=10000\
+Do you feel bored? How about chatting with me? $onStopped=$1
+
+ 
+  
