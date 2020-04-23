@@ -1,0 +1,16 @@
+topic: ~Bathroom()
+language: enu
+
+u: (e:onStart)
+$showImage=bathroom.png
+^nextProposal
+
+
+proposal:This is the bathroom. Unfortunately not a quiet place as probably in your home, but still a great room. Yes, you see, there is one toilet here, but as an electro robot I do not need an oil change ^run(animations/Stand/Emotions/Positive/Laugh_1). But there are a lot of other great devices that can be monitored and controlled over the network, such as the light. Now we are going to the most comfortable room, the bedroom. Please follow me.
+^nextProposal
+
+proposal: stop, waiting! Where are other robots in the lab? ^start(dialog_move_head/animations/LookLeft)^wait(dialog_move_head/animations/LookLeft)^start(dialog_move_head/animations/LookRight) ^wait(dialog_move_head/animations/LookRight) I have to be careful that they do not cross my path. They are angry because Junyu always flirts with me. ^start(animations/Stand/Waiting/Think_2) ^wait(animations/Stand/Waiting/Think_2)Junyu ^start(animation/Stand/Waiting/Think_2) ^wait(animation/Stand/Waiting/Think_2) hide me. ^run(animations/Stand/Waiting/Think_3)
+
+Okay, now I can go unnoticed in the bedroom. Please clear the way for me.
+$onStopped=1
+
