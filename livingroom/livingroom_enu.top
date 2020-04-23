@@ -1,0 +1,25 @@
+topic: ~livingroom()
+language: enu
+
+u:(e:onStart)
+^nextProposal
+proposal: Now we are in the last room. This room has a smart TV, on which you can see a lot of great works we have done before. Then, let me dance for you to end today's tour. Please wait for me to prepare for the stage!
+^start(dialog_move_arms/animations/StretchLArm)
+$openhab=turnon \Pau=15000\
+Let's show! $dance=$1
+\Pau = 120000\
+
+$showwebpage=$1
+^nextProposal
+proposal:I would like to thank you very much for taking the tour with me. I would also like to thank my developers, who taught me so many great functions throughout the semester.If you leave the room afterwards, I would be happy if you would rate the tour  
+^start(animations/Stand/Gestures/ShowTablet_1) on my tablet. Now I wish you have much fun with my graduation show.
+
+^nextProposal
+
+proposal:I hope you enjoyed it and we'll see you again soon ^start(animations/Stand/Gestures/ShowTablet_1) and don't forget to rate. See you soon ^run(animations/Stand/Gestures/Hey_1)
+$openhab=turndown
+$onStopped=$1
+
+
+
+

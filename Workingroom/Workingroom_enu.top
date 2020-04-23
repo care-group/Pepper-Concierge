@@ -1,0 +1,11 @@
+topic: ~Workingroom()
+language: enu
+
+u:(e:onStart)
+
+^nextProposal
+
+    
+proposal:Here we are now in the working room. On the walls you see so-called Nao Marks. These marks allow me with simple means to orient myself in space and to determine my position. This is especially useful for me at the beginning of developing programs. On my left you can see the idea magic blanket, which can be used to work. Behind the walls is the entire technology for the control of all devices here in the room. Now it's on to the next room. Please make room and let me through.
+
+$onStopped=1
