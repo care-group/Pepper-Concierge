@@ -1,0 +1,12 @@
+
+topic: ~General()
+language: enu
+
+u:(e:onStart)
+^nextProposal
+
+proposal:
+First some general information about the lab. It was set up with the aim of researching smart home components in the context of an apartment. Special attention is paid to the interaction between the devices and the development of further cases as well as their extensive testing. It is possible to control components remotely via the network and also to query their status. Five rooms have been created with a total of more than 100 smart home appliances ranging from intelligent lamps to smart washing machines. It continues into the first room, the Working room. Please follow me conspicuously.
+
+$onStopped=1
+
