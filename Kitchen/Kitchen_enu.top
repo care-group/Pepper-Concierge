@@ -1,0 +1,16 @@
+topic: ~Kitchen()
+language: enu
+
+u:(e:onStart)
+^nextProposal
+
+proposal:
+Now we have arrived in the most important room of the apartment, the kitchen. I can turn on the light for you $openhab=turn_on. 
+Here you will find many intelligent cupboards,some exquisite kitchen appliances. $openhab=topcup I can monitor all cupboards' states. Now there is   
+^break
+^call(ALMemory.getData("opennumber"))
+    c1:(_*)$1
+cupboards opened on the top. Please help me to close all cupboards, as I cannot touch anyone. Then we will move to the next room.And please wait for me to turn off the light.
+$openhab=turn_off
+$onStopped=1
+
