@@ -1,0 +1,13 @@
+topic: ~Welcome()
+language: enu
+
+
+u:(e:onStart)
+^nextProposal
+
+proposal: Welcome to the Smart Home laboratory at Heriot-Watt University. My name is $Dialog/RobotName .  
+I stand for you for a tour at leisure. Please follow me!
+$onStopped = 1
+
+
+
