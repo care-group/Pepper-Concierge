@@ -1,4 +1,4 @@
-Development of Interaction Capabilities of a Concierge Robot Pepper
+Pepper Concierge
 =
 Introduction
 -
